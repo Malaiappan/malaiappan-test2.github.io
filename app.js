@@ -28,7 +28,7 @@ getForecast = function(key, label) {
             results.label = label;
             results.created = json.query.created;
            console.log(results);
-            document.getElementById('cityTemp').textContent = label;
+            document.getElementById('cityTemp').textContent = results.created;
           //  app.updateForecastCard(results);
           });
         }
@@ -45,7 +45,7 @@ getForecast = function(key, label) {
           results.label = label;
           results.created = response.query.created;
          console.log(results);
-         document.getElementById('cityTemp').textContent = label;
+         document.getElementById('cityTemp').textContent = results.created;
          // app.updateForecastCard(results);
         }
       } else {
