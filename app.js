@@ -5,6 +5,10 @@
   }
 
 
+ document.getElementById('get').addEventListener('click', function() {
+    getForecast();
+  });
+
 getForecast = function(key, label) {
     var statement = 'select * from weather.forecast where woeid=2459115';
     var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' +
