@@ -20,7 +20,7 @@ self.addEventListener('install', function(e) {
 
 
 //Adding `fetch` event listener
-self.addEventListener('fetch', function (event) {
+self.addEventListener('fetch', function (e) {
   console.log('[Service Worker] Fetch', e.request.url);
   var dataUrl = 'https://query.yahooapis.com/v1/public/yql';
   if (e.request.url.indexOf(dataUrl) > -1) {
