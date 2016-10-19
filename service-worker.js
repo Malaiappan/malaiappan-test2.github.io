@@ -32,7 +32,7 @@ self.addEventListener('fetch', function (e) {
      * https://jakearchibald.com/2014/offline-cookbook/#cache-then-network
      */
     e.respondWith(
-      caches.open(dataCacheName).then(function(cache) {
+      caches.open(cacheName).then(function(cache) {
         return fetch(e.request).then(function(response){
           cache.put(e.request.url, response.clone());
           return response;
