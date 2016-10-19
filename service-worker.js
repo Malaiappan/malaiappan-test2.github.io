@@ -4,7 +4,7 @@ var cacheName = 'test';
 var filesToCache = [
   '/',
   '/index.html',
-  '/scripts/app.js'
+  '/app.js'
 ];
 
 
