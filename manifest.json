@@ -2,6 +2,21 @@
   "name": "Test from Malai",
   "short_name": "Test from Malai",
   "icons": [
+    {
+      "src": "image.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "image.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "image.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
   ],
   "start_url": "index.html",
   "display": "standalone",
