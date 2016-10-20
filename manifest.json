@@ -1,5 +1,6 @@
 {
   "name": "Test from Malai",
+  "short_name": "Test from Malai",
   "icons": [
   ],
   "start_url": "index.html",
