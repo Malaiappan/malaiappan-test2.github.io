@@ -1,0 +1,8 @@
+{
+  "name": "Test from Malai",
+  "icons": [
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}
