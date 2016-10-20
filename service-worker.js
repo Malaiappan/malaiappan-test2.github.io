@@ -45,6 +45,8 @@ self.addEventListener('activate', function(e) {
   return self.clients.claim();
 });
 
+
+
 //Adding `fetch` event listener
 self.addEventListener('fetch', function (e) {
   console.log('[Service Worker] Fetch', e.request.url);
@@ -79,4 +81,19 @@ self.addEventListener('fetch', function (e) {
       })
     );
   }
+});
+
+
+
+self.addEventListener('push', function(event) {
+  console.log('Push message', event);
+
+  var title = 'Push message';
+
+  event.waitUntil(
+    self.registration.showNotification(title, {
+     body: 'The Message',
+     icon: 'images/icon.png',
+     tag: 'my-tag'
+   }));
 });
